@@ -29,5 +29,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           SIGNERS_PATH: cla-signers.txt
           GOOGLE_SHEET_URL: "https://docs.google.com/spreadsheets/d/1A7epcYPGAsYNcUfD3qcWpyHQjLQgUJkPlcQr7Y-4e3E/export?format=csv&gid=1088589458"
+          COMMENT_MSG: "Welcome to the Problem Detection Community and thank you for your pull request!\n\nNew contributors need to sign the [Contributor License Agreement](https://forms.gle/PfhcfopPNY2rho6V6). In order for us to review and merge your code, please click the [CLA link](https://forms.gle/PfhcfopPNY2rho6V6) and fill out the form. Then comment on this PR with `@cla-bot check`."
         run: |
-          go run github.com/prequel-dev/clabot/cmd@v0.0.1
+          go run github.com/prequel-dev/clabot/cmd@v0.0.2
